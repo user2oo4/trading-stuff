@@ -1,0 +1,1 @@
+I have some free time so I just wanna test out writing some code to paper trade and back test
