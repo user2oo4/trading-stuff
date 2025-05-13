@@ -54,5 +54,53 @@
 
 ### Transaction costs and its affect on the strategy
 
+- **Cost of liquidity** (market prices -> bid-ask spread, limit orders -> avoid liquidity costs but incur opportunity costs)
+- **Market impact**: effect on market prices due to your own order (can contribute to a large part of total transaction cost)
+- Delay (internet, software-related) -> **"slippage"** (difference between the order price and execution price)
+- **Estimate transaction costs**: Half the average bid-ask spread + commission (if order-size is not much bigger than average sizes of best bid and offer)
+
+### Does Data Suffer from Suvivorship Bias
+- Companies may disappear (bankruptcy, mergers, ...)
+- Backtesting a strategy using data with survivorship bias may be dangerous (historical performance get inflated)
+- Especially true if the strategy tends to buy cheap
+
+### How did performance of strategy change over the years?
+- Most strategies performed better in the past (10 years ago) because there weren't many hedge funds.
+- Also, bid-ask spreads were higher in the past (can't assume today's transaction cost)
+- **Pay attention to its performace in recent few years**
+- "Regime shifts" in financial margets can mean that data from an earlier period cannot be fitted to the same model that is applicable today.
+  - Major regime shifts: Changes in market regulation, macroeconomic events
+
+### Data-snooping bias
+- More rules + parameters -> easier to overfit model
+
+### "Fly under the radar" of instituitonal money managers
+- Look for strategies that fly under the radar of big companies.
+  - Lower capacities (trade too often)
+  - Trade very few stocks everyday
+  - infrequent positions
+- Likely still to be profitable because have not been completely arbitraged away by hedge funds
+
+## Summary
+- Step 1: Find prospective trading strategies
+  - business school + economic research sites
+  - Financial sties + blogs focusing on investors
+  - Trader forums
+- Step 2: Pick the best handful following these questions
+  - Time?
+  - Programming skills?
+  - Capital?
+  - Goal?
+- Step 3: Filter out some unsuitable strategies using questions noted above
+  - outperform a benchmark?
+  - high Sharpe ratio?
+  - small + short enough drawdown
+  - backtest suffer from bias?
+  - "niche" that protects from competition from hedge funds
+
+# Chapter 3: Backtesting
+
+## Finding and using historical databases
+
 
 
