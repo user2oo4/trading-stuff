@@ -36,7 +36,6 @@ def fetch_stock_data(company, start_date, end_date, interval = "1d"):
 
 
 if __name__ == "__main__":
-    companies = fetch_sp500_companies()
+    companies = ["SPY"]
     for company in companies:
-        fetch_stock_data(company=company, start_date='2023-06-01', end_date='2024-01-01', interval="1h")
-        fetch_stock_data(company=company, start_date='2020-01-01', end_date='2024-01-01', interval="1d")
+        fetch_stock_data(company=company, start_date='2001-11-26', end_date='2007-11-14', interval="1d")

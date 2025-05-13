@@ -101,6 +101,16 @@
 # Chapter 3: Backtesting
 
 ## Finding and using historical databases
+- Sources: ![alt text](table-3-1.png)
+- Find data source that is already adjusted for splits and dividends (e.g. yahoo finance)
+- Use open and close prices instead of high and low (very noisy) for less backtesting errors
 
+## Performance measurement
+- Two most important numbers: Sharpe ratio + drawdown
+### Sharpe ratio
+- Should we subtract risk-free rate (benchmark (treasury)) from a dollar-neutral (buy and sell to make money)? 
+  - No because the financing cost is small and can be neglected. Also there's a margin balance to maintain to earns a credit close to risk-free rate.
+  - Same for long-only. Only include risk-free rate if finance cost is considerable
+  - Annualized Sharpe Ratio: sqrt(N_t) * Sharpe ratio based on T (T: period, N_t: number of t periods annually)
 
 
